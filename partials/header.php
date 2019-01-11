@@ -17,11 +17,11 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item <?php if ($_SESSION['page'] == 'login') {echo "active"; } ?>">
         <a class="nav-link" href="/splists/view/login.php">Se connecter</a>
-        <li class="nav-item">
+        <li class="nav-item <?php if ($_SESSION['page'] == 'signup') {echo "active"; } ?>">
         <a class="nav-link" href="/splists/view/signup.php">Creer un compte</a>
-        <li class="nav-item">
+        <li class="nav-item <?php if ($_SESSION['page'] == 'board') {echo "active"; } ?>">
         <a class="nav-link" href="/splists/view/board.php">Tableau</a>
       </li>
     </ul>
